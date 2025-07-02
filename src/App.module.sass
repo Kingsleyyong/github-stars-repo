@@ -5,6 +5,7 @@
   justify-content: center
   height: 100%
   width: 100%
+  overflow-x: hidden
   
 .header
   background-color: #b9baba
@@ -29,16 +30,25 @@
   display: flex
   justify-content: right
 
-  button:first-child
-    margin-right: 2%
+  button
+    color: black
+    font-weight: bold
+    margin: 2%
 
-  button:last-child
-    margin-left: 2%
+    &:hover
+      border: 2px solid black
 
 @media (prefers-color-scheme: dark)  
   .header
     background-color: rgb(56, 56, 56)
     color: white
+
+  .paginationButtonGroup
+    button
+      color: white
+
+      &:hover
+        border: 2px solid white
 
 @media screen and (max-width:1350px)
   .header

@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import styles from './App.module.sass'
 import { Card } from './components/Card';
 import { useFetchRepos } from './hooks/useFetchRepos';
